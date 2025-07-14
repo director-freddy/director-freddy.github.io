@@ -11,15 +11,26 @@
         margin: 0;
         padding: 0;
       }
-      header {
-        text-align: center;
+      .header-container {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 20px;
         padding: 30px;
         background-color: #333;
         color: white;
       }
-      header img {
+      .header-container img {
         max-width: 120px;
         border-radius: 50%;
+      }
+      .header-text h1 {
+        margin: 0;
+        font-size: 28px;
+      }
+      .header-text p {
+        margin: 5px 0 0;
+        font-size: 16px;
       }
       section {
         padding: 40px 20px;
@@ -46,9 +57,13 @@
   </head>
   <body>
     <header>
-      <img src="logo.png" alt="Eddy Photography Logo" />
-      <h1>Eddy Photography</h1>
-      <p>Capturing Kenyan culture through the lens</p>
+      <div class="header-container">
+        <img src="eddy-logo.png" alt="" />
+        <div class="header-text">
+          <h1>Eddy Photography</h1>
+          <p>Capturing Kenyan culture through the lens</p>
+        </div>
+      </div>
     </header>
 
     <section id="about">
@@ -84,3 +99,4 @@
     </footer>
   </body>
 </html>
+
