@@ -1,169 +1,145 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Eddy Photography</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   .gallery-labels {
-  display: flex;
-  justify-content: space-between;
-  margin: 30px 0 10px;
-  width: 100%;
-}
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eddy Photography</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
 
-.label {
-  padding: 10px 20px;
-  font-weight: bold;
-  color: white;
-  font-size: 16px;
-}
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
 
-.before-label {
-  background-color: #2c3e50;
-}
+    .header-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+    }
 
-.after-label {
-  background-color: #27ae60;
-}
- <style>#about {
-  border-bottom: 5px solid black;
-  padding-bottom: 20px;
-  margin-bottom: 20px;
-}
-.about-text p {
-  font-size: 16px;
-  line-height: 1.3;
-  margin: 0;
-}
-.about-container {
-  display: flex;
-  align-items: flex-start;
-  gap: 30px;
-  flex-wrap: wrap;
-}
+    .header-text h1 {
+      margin: 0;
+      font-size: 28px;
+    }
 
-.about-photo img {
-  max-width: 200px;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-}
+    .header-text p {
+      margin: 5px 0 0;
+      font-size: 16px;
+    }
 
-.ceo-label {
-  text-align: center;
-  font-size: 14px;
-  color: #2c3e50;
-  margin-top: 8px;
-  font-weight: bold;
-}
+    .about-container {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      padding: 20px;
+    }
 
-.about-text {
-  flex: 1;
-}
+    .about-photo img {
+      max-width: 200px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      margin-bottom: 5px;
+    }
 
-      body {
-        font-family: Arial, sans-serif;
-        background-color: #f9f9f9;
-        margin: 0;
-        padding: 0;
-      }
-      .header-container {
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        gap: 20px;
-        padding: 30px;
-        background-color: #333;
-        color: white;
-      }
-      .header-container img {
-        max-width: 120px;
-        border-radius: 50%;
-      }
-      .header-text h1 {
-        margin: 0;
-        font-size: 28px;
-      }
-      .header-text p {
-        margin: 5px 0 0;
-        font-size: 16px;
-      }
-      section {
-        padding: 40px 20px;
-        max-width: 800px;
-        margin: auto;
-      }
-      h2 {
-        color: #2c3e50;
-        margin-bottom: 10px;
-      }
-      p {
-        color: #555;
-        font-size: 18px;
-        line-height: 1.6;
-      }
-      footer {
-        text-align: center;
-        padding: 20px;
-        background-color: #eee;
-        font-size: 14px;
-        color: #777;
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <div class="header-container">
-        <img src="eddy photography logo (1).png" alt="" />
-        <div class="header-text">
-          <h1>Eddy Photography</h1>
-          <p>Capturing Kenyan culture through the lens</p>
-        </div>
+    .ceo-label {
+      text-align: center;
+      font-size: 14px;
+      color: #2c3e50;
+      margin: 0;
+      font-weight: bold;
+    }
+
+    .about-text p {
+      font-size: 15px;
+      line-height: 1.2;
+      margin: 0;
+    }
+
+    #about {
+      border-bottom: 1px solid black;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+    }
+
+    #gallery h2 {
+      text-align: center;
+    }
+
+    #gallery p {
+      text-align: center;
+      font-size: 16px;
+      color: #555;
+    }
+
+    .gallery-labels {
+      display: flex;
+      justify-content: space-between;
+      margin: 30px 0 10px;
+      width: 100%;
+    }
+
+    .label {
+      padding: 10px 20px;
+      font-weight: bold;
+      color: white;
+      font-size: 16px;
+    }
+
+    .before-label {
+      background-color: #2c3e50;
+    }
+
+    .after-label {
+      background-color: #27ae60;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-container">
+      <img src="eddy photography logo (1).png" alt="" />
+      <div class="header-text">
+        <h1>Eddy Photography</h1>
+        <p>Capturing Kenyan culture through the lens</p>
       </div>
-    </header>
-
-   <section id="about">
-  <h2>About Me</h2>
-  <div class="about-container">
-    <div class="about-photo">
-      <img src="WhatsApp Image 2025-05-30 at 11.37.22 AM (1).jpeg" alt="" />
-      <p class="ceo-label">C.E.O</p>
     </div>
-    <div class="about-text">
-      <p>I’m <strong>ALFRED MONANKA</strong>, — a passionate graphic designer and video/photo editor with experience turning ideas into visually compelling content. I specialize in YouTube video editing, motion graphics, and eye-catching designs that help brands and creators stand out. I’m detail-oriented, deadline-driven, and dedicated to delivering high-quality results that exceed expectations. Let’s bring your vision to life!</p>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="about-container">
+      <div class="about-photo">
+        <img src="WhatsApp Image 2025-05-30 at 11.37.22 AM (1).jpeg" alt="" />
+        <p class="ceo-label">C.E.O</p>
+      </div>
+      <div class="about-text">
+        <p>I’m <strong>ALFRED MONANKA</strong>, known as <strong>EDDY FREDDY</strong> — a passionate graphic designer and video/photo editor with experience turning ideas into visually compelling content. I specialize in YouTube video editing, motion graphics, and eye-catching designs that help brands and creators stand out. I’m detail-oriented, deadline-driven, and dedicated to delivering high-quality results that exceed expectations. Let’s bring your vision to life!</p>
+      </div>
     </div>
-  </div>
-</section>
-    <section id="gallery">
-  <h2 style="text-align: center;">Gallery</h2>
-  <p style="text-align: center; font-size: 16px; color: #555;">
-    These are some of my before and after edits, just to showcase how unique and smart I am to deliver quality and clean work.
- <div class="gallery-labels">
-  <div class="label before-label">BEFORE</div>
-  <div class="label after-label">AFTER</div>
-</div>
- </p>
-</section>
-    <section id="projects">
-      <h2>Graphic Design Projects</h2>
-      <p>From posters to branding kits, I bring ideas to life with bold visuals and cultural depth. Stay tuned for project highlights.</p>
-    </section>
+  </section>
 
-    <section id="contact">
-      <h2>Contact Info</h2>
-      <p>
-        Email: <a href="mailto:alfmonanka@gmail.com">alfmonanka@gmail.com</a><br />
-        Phone: <a href="tel:+254116564908">0116564908</a><br />
-        Instagram: <a href="https://www.instagram.com/eddyfreddy24" target="_blank">@eddyfreddy24</a><br />
-        Facebook: <a href="https://www.facebook.com/profile.php?id=61572437830128" target="_blank">facebook.com/eddyfreddy</a><br />
-        TikTok: <a href="https://www.tiktok.com/@eddy_freddy24" target="_blank">@eddy_freddy24</a><br />
-        YouTube: <a href="https://youtube.com/@eddy_freddy24" target="_blank">@eddy_freddy24</a><br />
-        Location: Nairobi, Kenya
-      </p>
-    </section>
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <p>These are some of my before and after edits, just to showcase how unique and smart I am to deliver quality and clean work.</p>
 
-    <footer>
-      &copy; 2025 Eddy Photography. All rights reserved.
-    </footer>
-  </body>
+    <div class="gallery-labels">
+      <div class="label before-label">BEFORE</div>
+      <div class="label after-label">AFTER</div>
+    </div>
+  </section>
+
+</body>
 </html>
+
 
